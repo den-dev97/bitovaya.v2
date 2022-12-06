@@ -43,7 +43,7 @@
         </div>
         <div class="about-info columns is-multiline is-centered">
             <section class="column box is-5 mr-4 about-us">
-                <h3 class="is-size-4 has-text-weight-bold">О нас</h3>
+                <h3 class="is-size-4 has-text-weight-bold">Наша компания</h3>
                 <p >
                     Магазин рассчитан на онлайн торговлю бытовой техникой. Вы можете выбрать товар из каталога в разных категориях и сделать заказ. 
                     При оформлении заказа регистрация не требуется, оплата может быть произведена как наличными при получении заказа так и онлайн по карте.

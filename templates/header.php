@@ -4,9 +4,6 @@
             <i class="index-page-icon"></i>
             bytovaya
         </a>
-        <a href="about.php" class="nav-item">
-            О нас
-        </a>
         <div class="nav-item search-input">
             <form class="search-form" action="index.php" method="POST">
                 <input class="search" type="search" placeholder="Поиск" name="search" id="search">

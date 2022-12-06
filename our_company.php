@@ -7,10 +7,10 @@
 
     $stylesheets = getHTMLStyleSheets(['all', 'bulma', 'main']);
     $scripts = getHTMLScripts(['jq', 'main']);
-    $head = template('head', ['title' => 'О нас', 'stylesheets' => $stylesheets]);
+    $head = template('head', ['title' => 'Наша компания', 'stylesheets' => $stylesheets]);
 
     $header = template('header');
-    $main = template('about', []);
+    $main = template('our_company', []);
     $footer = template('footer');
 
     $html = template('layout', [

@@ -3,8 +3,8 @@
         <strong>
             О компании
         </strong>
-        <a href="./about.php" class="footer-link">
-            О нас
+        <a href="./our_company.php" class="footer-link">
+            Наша компания
         </a>
         <a href="./news.php" class="footer-link">
             Наши новости
