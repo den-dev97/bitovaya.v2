@@ -1,9 +1,9 @@
-<main class="columns mt-3 is-centered">
-    <div class="column is-8">
+<main class="main">
+    <div style="width: 100%;">
         <table class="table is-fullwidth is-bordered has-text-centered">
             <thead>
                 <tr>
-                    <th>Код товара</th>
+                    <th>Фото</th>
                     <th>Название</th>
                     <th>Стоимость, руб.</th>
                     <th>Количество, шт</th>
@@ -15,12 +15,14 @@
                 <?php foreach ($products as $product) : ?>
                     <?php $amount += $product['count'] * $product['product']['price'] ?>
                     <tr>
-                        <td><?= $product['id'] ?></td>
+                        <td> <img class="product-img" src="assets/pic/<?= $product['product']['img'] ?>" alt="Placeholder image"></td>
                         <td><?= $product['product']['title'] ?></td>
                         <td class="price"><?= $product['product']['price'] ?></td>
                         <td class="count"><?= $product['count'] ?></td>
                         <td>
-                            <button class="button ajx" data-id="<?= $product['id'] ?>">x</button>
+                            <button class="button ajx" data-id="<?= $product['id'] ?>">
+                                <i class="delete-icon"></i>
+                            </button>
                         </td>
                     </tr>
                 <?php endforeach ?>
@@ -30,7 +32,7 @@
                 <tr>
                     <th colspan="2">Общая стоимость</th>
                     <th colspan="2"><span class="amount"><?= $amount ?></span> &#8381;</th>
-                    <th><button class="button" id="popup">Оформить</button></th>
+                    <th><button class="button checkout-button" id="popup">Оформить</button></th>
                 </tr>
             </tfoot>
         </table>
@@ -93,7 +95,7 @@
             </div>
             <div class="field">
                 <p class="control">
-                    <button class="button is-success is-outlined is-fullwidth">
+                    <button class="button is-success is-outlined is-fullwidth button-to-cart">
                         Оформить
                     </button>
                 </p>

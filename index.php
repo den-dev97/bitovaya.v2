@@ -15,7 +15,7 @@
     $stylesheets = getHTMLStyleSheets(['all', 'bulma', 'main']);
     $scripts = getHTMLScripts(['jq', 'main', 'index', 'filter']);
 
-    $head = template('head', ['title' => 'Бытовая техника', 'stylesheets' => $stylesheets]);
+    $head = template('head', ['title' => 'БытоваяТехника', 'stylesheets' => $stylesheets]);
     $header = template('header');
     $categories = template('categories');
 

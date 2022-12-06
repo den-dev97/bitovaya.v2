@@ -1,5 +1,5 @@
-<main class="columns mt-3 is-centered is-mobile">
-    <div class="column is-8-mobile is-5-tablet is-4-desktop is-3-fullhd box">
+<main class="main  is-centered is-align-items-center">
+    <div class="column is-8-mobile is-5-tablet is-4-desktop is-3-fullhd box modal-window">
         <form action="./login.php" method="POST">
             <p class="title is-6 has-text-centered">Форма авторизации</p>
             <div class="field">
@@ -20,7 +20,7 @@
             </div>
             <div class="field">
                 <p class="control">
-                    <button type="submit" class="button is-success is-outlined is-fullwidth">
+                    <button type="submit" class="button is-fullwidth">
                         Вход
                     </button>
                 </p>

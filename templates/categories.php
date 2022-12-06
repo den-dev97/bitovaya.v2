@@ -1,4 +1,4 @@
-<aside class="menu has-text-centered ">
+<aside class="menu">
     <p class="menu-label">
         Категории
     </p>
