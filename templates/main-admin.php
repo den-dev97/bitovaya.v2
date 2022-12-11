@@ -2,7 +2,7 @@
     <div>
         <div class="columns">
             <div class="column is-12">
-                <a class="has-text-dark ml-4 button" href="adm_news.php">
+                <a class="has-text-dark ml-4 button " href="adm_news.php">
                     Добавить новость
                 </a>
             </div>
@@ -14,17 +14,6 @@
             </p>
             <div class="column is-12">
                 <table class="table is-fullwidth is-bordered has-text-centered" id="table_orders">
-                    <thead>
-                        <tr>
-                            <th>Номер заказа</th>
-                            <th>Клиент</th>
-                            <th>Телефон</th>
-                            <th>Метод оплаты</th>
-                            <th>Сумма</th>
-                            <th>Комментарий</th>
-                            <th>Состав заказа</th>
-                        </tr>
-                    </thead>
                     <tbody>
                             <?php foreach ($orders as $k => $v) : ?>
                                 <tr>
@@ -59,9 +48,6 @@
                         <div class="field">
                             <p class="control is-expanded has-icons-left">
                                 <input class="input" type="text" placeholder="Название товара" name="title">
-                                <span class="icon is-small is-left">
-                                    <i class="fas fa-heading"></i>
-                                </span>
                             </p>
                             <p class="help is-danger"></p>
                         </div>
@@ -161,7 +147,7 @@
                     <div class="field-body">
                         <div class="field">
                             <div class="control">
-                                <button id="add_btn" type="submit" class="button is-primary">
+                                <button id="add_btn" type="submit" class="button button-to-cart">
                                     Добавить
                                 </button>
                             </div>

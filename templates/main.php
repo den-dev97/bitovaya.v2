@@ -1,5 +1,5 @@
 <main class="main">
-    <div class="" style="width:200px">
+    <div class="main-inner">
         <?= $categories ?>
     </div>
     <div class="column">

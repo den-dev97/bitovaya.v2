@@ -22,16 +22,16 @@
                 <?= $_SESSION['customer']['name'] ?>
             </span>
                 <a href="./logout.php" class="nav-item">
-                    <i class=""></i>
+                    <i class="icon-logout"></i>
                     Выход
                 </a>
                 <?php else: ?>
                 <a href="./login.php" class="nav-item">
-                    <i class=""></i>
+                    <i class="icon-enter"></i>
                     Вход
                 </a>
                 <a href="./signup.php" class="nav-item">
-                    <i class=""></i>
+                    <i class="icon-reg "></i>
                     Регистрация
                 </a>
                 <?php endif ?>

@@ -1,21 +1,15 @@
 <main class="main  is-centered is-align-items-center">
-    <div class="column is-8-mobile is-5-tablet is-4-desktop is-3-fullhd box modal-window">
+    <div class="column is-8-mobile is-5-tablet is-4-desktop is-3-fullhd box modal-window custom-form ">
         <form action="./login.php" method="POST">
-            <p class="title is-6 has-text-centered">Форма авторизации</p>
+            <p class="title is-6 has-text-centered" style="color: white;" >Авторизация</p>
             <div class="field">
                 <p class="control has-icons-left">
                     <input class="input" type="email" placeholder="Email" name="email" required>
-                    <span class="icon is-small is-left">
-                        <i class="fas fa-envelope"></i>
-                    </span>
                 </p>
             </div>
             <div class="field">
                 <p class="control has-icons-left">
                     <input class="input" type="password" placeholder="Пароль" name="password" required>
-                    <span class="icon is-small is-left">
-                        <i class="fas fa-lock"></i>
-                    </span>
                 </p>
             </div>
             <div class="field">

@@ -9,9 +9,9 @@
         </div>
     </div>
     <div class="column">
-        <div class="" >
+        <div >
             <div class="pb-2  is-flex is-flex-direction-column" >
-                <div class="">
+                <div>
                     <h3 class="is-6 mb-2 product-title">
                         <?= $product['title'] ?>
                     </h3>

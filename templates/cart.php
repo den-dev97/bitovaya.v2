@@ -1,24 +1,15 @@
-<main class="main">
-    <div style="width: 100%;">
-        <table class="table is-fullwidth is-bordered has-text-centered">
-            <thead>
-                <tr>
-                    <th>Фото</th>
-                    <th>Название</th>
-                    <th>Стоимость, руб.</th>
-                    <th>Количество, шт</th>
-                    <th>Удалить</th>
-                </tr>
-            </thead>
+<main class="main is-fullwidth ">
+    <div class="cart-inner">
+        <table class="table  is-bordered has-text-centered">
             <tbody>
                 <?php $amount = 0; ?>
                 <?php foreach ($products as $product) : ?>
                     <?php $amount += $product['count'] * $product['product']['price'] ?>
                     <tr>
-                        <td> <img class="product-img" src="assets/pic/<?= $product['product']['img'] ?>" alt="Placeholder image"></td>
+                        <td> <img class="product-img cart-img" src="assets/pic/<?= $product['product']['img'] ?>" alt="Placeholder image"></td>
                         <td><?= $product['product']['title'] ?></td>
                         <td class="price"><?= $product['product']['price'] ?></td>
-                        <td class="count"><?= $product['count'] ?></td>
+                        <td class="count"><?= $product['count'] ?>шт.</td>
                         <td>
                             <button class="button ajx" data-id="<?= $product['id'] ?>">
                                 <i class="delete-icon"></i>
@@ -28,56 +19,41 @@
                 <?php endforeach ?>
 
             </tbody>
-            <tfoot>
-                <tr>
-                    <th colspan="2">Общая стоимость</th>
-                    <th colspan="2"><span class="amount"><?= $amount ?></span> &#8381;</th>
-                    <th><button class="button checkout-button" id="popup">Оформить</button></th>
-                </tr>
-            </tfoot>
         </table>
+        <div class="amount-wrapper">
+            <p>Общая стоимость</p>
+            <p><span class="amount"><?= $amount ?></span> &#8381;</p>
+            <p><button class="button checkout-button" id="popup">Оформить</button></p>
+        </div>
     </div>
 </main>
 <div class="modal">
     <div class="modal-background"></div>
-    <div class="modal-content box p-5">
+    <div class="modal-content box p-6">
         <form action="/order.php" method="POST">
-            <p class="title is-6 has-text-centered">Оформление заказа</p>
+            <h3 class="title is-4 has-text-centered">Оформление заказа</h3>
             <div class="field">
-                <label class="label">Ваше имя</label>
                 <p class="control has-icons-left">
                     <input class="input" type="text" placeholder="Имя" <?php if($name) echo "value='$name'"?> required name="name">
-                    <span class="icon is-small is-left">
-                        <i class="fas fa-user"></i>
-                    </span>
                 </p>
             </div>
             <div class="field">
-                <label class="label">Номер телефона</label>
                 <p class="control has-icons-left">
                     <input class="input" type="text" placeholder="Телефон" <?php if($phone) echo "value='$phone'"?> required name="phone">
-                    <span class="icon is-small is-left">
-                        <i class="fas fa-phone"></i>
-                    </span>
                 </p>
             </div>
             <div class="field">
-                <label class="label">Email</label>
                 <p class="control has-icons-left">
                     <input class="input" type="email" placeholder="Email" <?php if($email) echo "value='$email'"?> required name="email">
-                    <span class="icon is-small is-left">
-                        <i class="fas fa-envelope"></i>
-                    </span>
                 </p>
             </div>
             <div class="field">
-                <label class="label">Комментарий к заказу</label>
                 <p class="control has-icons-left">
-                    <textarea class="textarea  has-fixed-size" rows="3" name="comment"></textarea>
+                    <textarea placeholder="Комментарий" class="textarea  has-fixed-size" rows="3" name="comment"></textarea>
                 </p>
             </div>
             <div class="field">
-                <label class="label">Форма оплаты</label>
+                <label class="">Оплата</label>
                 <div class="control">
                     <label class="radio">
                         <input type="radio" name="pay_method" value="Наличными">
@@ -90,8 +66,8 @@
                 </div>
             </div>
             <div class="field">
-                <label class="label">Выбрано товаров: <span id="f_count"></span></label>
-                <label class="label">На сумму: <span id="f_amount"></span></label>
+                <label class="">Товаров: <strong id="f_count"></strong></label><br>
+                <label class="">Итого: <strong id="f_amount"></strong></label>
             </div>
             <div class="field">
                 <p class="control">

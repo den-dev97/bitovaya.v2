@@ -29,7 +29,7 @@
             </div>
             <div class="field">
                 <p class="control">
-                    <button type="submit" class="button is-outlined is-fullwidth">
+                    <button type="submit" class="button is-outlined is-fullwidth button-to-cart">
                         Добавить новость
                     </button>
                 </p>
