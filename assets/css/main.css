@@ -496,3 +496,8 @@ table tr:not(:last-child){
 table th {
     border: none !important;
 }
+
+.icon-star {
+    content: url(../pic/icons/star.png);
+    width: 20px;
+}

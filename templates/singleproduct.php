@@ -38,13 +38,22 @@
                             <span class="mr-5">
                                 Оцените данный товар:
                             </span>
-                            1<input type="radio" name="rate" value="1" class="mr-3 ml-1">
-                            2<input type="radio" name="rate" value="2" class="mr-3 ml-1">
-                            3<input type="radio" name="rate" value="3" class="mr-3 ml-1">
-                            4<input type="radio" name="rate" value="4" class="mr-3 ml-1">
-                            5<input type="radio" name="rate" value="5" class="mr-3 ml-1">
+                            <i class="icon-star"></i>
+                            <!-- <input type="radio" name="rate" value="1" class="mr-3 ml-1"> -->
+                            <i class="icon-star"></i>
+                            <!-- <input type="radio" name="rate" value="2" class="mr-3 ml-1"> -->
+                            <i class="icon-star"></i>
+
+                            <!-- <input type="radio" name="rate" value="3" class="mr-3 ml-1"> -->
+                            <i class="icon-star"></i>
+
+                            <!-- <input type="radio" name="rate" value="4" class="mr-3 ml-1"> -->
+                            <i class="icon-star"></i>
+
+                            <!-- <input type="radio" name="rate" value="5" class="mr-3 ml-1"> -->
+
                             <input type="hidden" name="product_id" value="<?= $product['id'] ?>" >
-                            <input class="button is-small" type="submit">
+                            <!-- <input class="button is-small" type="submit"> -->
                         </form>
                     </div>
                 </div>
